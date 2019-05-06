@@ -1,6 +1,45 @@
 # Final Library of all functions created for the project
 import pandas as pd
 
+def add(matrixa,matrixb):
+    a = matrixa.shape
+    b = matrixb.shape
+    if a[0] == b[0] and a[1] == b[1] :
+        
+        add = pd.DataFrame()
+        for column in matrixa:
+            col = matrixa[column] + matrixb[column]
+            add[column] = col
+        return add
+    else:
+        print('These matrices are not the same size. You cannot add them.')
+
+def multiply(a, b):
+    count = 0
+    alll = []
+    while count < b.shape[1]:
+        col = list(b.iloc[:,count])
+        dots = []
+        count2 = 0
+        while count2 < a.shape[0]:
+            row = list(a.loc[count2])
+            dot = 0
+            count3 = 0
+            while count3 < len(row):
+                dot += row[count3]*col[count3]
+                count3 += 1
+            dots.append(dot)
+            count2 += 1
+        alll.append(dots)
+        count += 1
+    ab = pd.DataFrame()
+    i = 0
+    col_count = list(b.columns)
+    while i < len(col_count):
+        ab['Col ' + str(i+1)] = alll[i]
+        i += 1
+    return ab
+
 def det2(matrix):
     if matrix.shape == (2,2):
         a = matrix.loc[0][0]
