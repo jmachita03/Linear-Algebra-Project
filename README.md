@@ -21,7 +21,7 @@
     
     
     
-   ### Our Library
+   ### Linear Algebra Library:
     
    #### add()
         Adds any two matrices.
