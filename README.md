@@ -21,25 +21,25 @@
     
     
     
-    ### Our Library
+   ### Our Library
     
-    #### add()
+   #### add()
         Adds any two matrices.
         
-    #### multiply()
+   #### multiply()
         Multiplies any two matrices.
     
-    #### det2()
+   #### det2()
         Finds the determinant of a 2X2 matrix.
     
-    #### det3()
+   #### det3()
         Finds the determinant of a 3X3 matrix.
         
-    #### det4()
+   #### det4()
         Finds the determinant of a 4X4 matrix.
         
-    #### det5()
+   #### det5()
         Finds the determinant of a 5X5 matrix.
     
-    #### det6()
+   #### det6()
         Finds the determinant of a 6X6 matrix.
