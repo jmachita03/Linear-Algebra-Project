@@ -5,7 +5,7 @@
 
 ## Introduction:
 
-    <p>We created a library called Linear based on simple computations required for Linear Algebra. We have created functions to add any two matrices, multiply any two matrices, or find the determinants of square matrices sizes 2X2 - 6X6. </p>
+<p>We created a library called Linear based on simple computations required for Linear Algebra. We have created functions to add any two matrices, multiply any two matrices, or find the determinants of square matrices sizes 2X2 - 6X6. </p>
     
 
 
